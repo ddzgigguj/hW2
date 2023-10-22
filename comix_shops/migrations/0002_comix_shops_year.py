@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('manga_shops', '0001_initial'),
+        ('comix_shops', '0001_initial'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='manga_shops',
+            model_name='comix_shops',
             name='year',
             field=models.DateTimeField(null=True, verbose_name='Укажите дату выпуска манги'),
         ),

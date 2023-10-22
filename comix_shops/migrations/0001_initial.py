@@ -2,7 +2,6 @@
 
 from django.db import migrations, models
 
-
 class Migration(migrations.Migration):
 
     initial = True
@@ -12,12 +11,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Manga_shops',
+            name='Comix_shops',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Укажите название манги')),
+                ('title', models.CharField(max_length=100, verbose_name='Укажите название комикса')),
                 ('description', models.TextField(verbose_name='Укаэите описание манги')),
-                ('image', models.ImageField(upload_to='manga/', verbose_name='Загрузите фото')),
+                ('image', models.ImageField(upload_to='comix/', verbose_name='Загрузите фото')),
                 ('genre', models.CharField(choices=[('Хоррор', 'Хоррор'), ('Комедия', 'Комедия'), ('Фантастика', 'Фантастика'), ('Драмма', 'Драмма'), ('Боевые искусства', 'Боевые искусства')], max_length=100, verbose_name='Укажите жанр')),
                 ('author', models.CharField(max_length=100, verbose_name='Укажите автора')),
                 ('cost', models.PositiveIntegerField(verbose_name='Укажите цену')),

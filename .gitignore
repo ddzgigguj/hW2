@@ -3,3 +3,4 @@ venv
 templates
 db.sqlite3
 media
+env

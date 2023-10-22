@@ -8,3 +8,4 @@ def postView(request):
     }
     template_name = 'post.html'
     return render(request, template_name, context)
+
