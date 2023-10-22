@@ -10,7 +10,7 @@ def mangaListView(request):
     return render(request, html_name, context)
 
 def mangaDetailView(request, id):
-    manga_id = get_object_or_404(models.Manga_shops, id=id)
+    manga_id = get_object_or_404(models.Comix_shops_shops, id=id)
     html_name ='comix/comix_detail.html'
     context = {
         'comix_id': manga_id

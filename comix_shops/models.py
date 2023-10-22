@@ -10,7 +10,7 @@ class Comix_shops(models.Model):
     )
     title = models.CharField('Укажите название манги', max_length=100)
     description = models.TextField('Укаэите описание манги')
-    image = models.ImageField('Загрузите фото', upload_to='manga/')
+    image = models.ImageField('Загрузите фото', upload_to='comix/')
     genre = models.CharField('Укажите жанр', max_length=100, choices=GENRE)
     author = models.CharField('Укажите автора', max_length=100)
     cost = models.PositiveIntegerField('Укажите цену')
